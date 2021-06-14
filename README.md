@@ -11,7 +11,6 @@ Simple etl with airflow framework
 
 ## About
 Etl contains 3 steps. 
-
 First step collect data updated in interval between current and previous dag run. After that data stored as csv by partitions. 
 Second step read existed csv partitions, transform and write data to stage table. Csv files remove after read. 
 Third step update partitions at target table by partitions from stage table and truncate stage table.
